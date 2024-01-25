@@ -1,4 +1,3 @@
-
 public class Person implements Payable{
     private static int id_gen = 1;
     private int id;
@@ -32,12 +31,10 @@ public class Person implements Payable{
         this.surname = surname;
     }
 
-
     @Override
     public String toString(){
         return  id  + name + surname;
     }
-
 
     @Override
     public double getPaymentAmount() {

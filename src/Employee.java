@@ -5,6 +5,7 @@ public class Employee extends Person{
     public Employee(){
         super();
     }
+
     public Employee(String name, String surname, String position, double salary){
     super(name,surname);
     this.salary = salary;
@@ -24,10 +25,12 @@ public class Employee extends Person{
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
     @Override
     public String toString(){
         return getName() + getSurname() + getPaymentAmount();
     }
+
     @Override
     public double getPaymentAmount(){
         return salary;
