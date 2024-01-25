@@ -10,7 +10,6 @@ public class Employee extends Person{
     super(name,surname);
     this.salary = salary;
     }
-
     public String getPosition() {
         return position;
     }

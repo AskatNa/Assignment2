@@ -9,6 +9,7 @@ public class Main {
     Student student1 = new Student("ASka","NAr",3.40);
     Student student2 = new Student("AFK", "WASD",2.57);
 
+
     person.add(employee1);
     person.add(employee2);
     person.add(student1);

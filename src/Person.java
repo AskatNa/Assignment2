@@ -35,7 +35,6 @@ public class Person implements Payable{
     public String toString(){
         return  id  + name + surname;
     }
-
     @Override
     public double getPaymentAmount() {
         return 0;

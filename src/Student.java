@@ -15,7 +15,6 @@ public class Student extends Person{
         this.gpa = gpa;
     }
 
-
     @Override
     public String toString(){
         return getId() + getName() + getSurname() + getPaymentAmount();
