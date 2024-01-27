@@ -1,19 +1,27 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
-    ArrayList<Person> person = new ArrayList<>();
-    Employee employee1 = new Employee("Aset","Asetov","earns",25.000);
-    Employee employee2 = new Employee("Luke","Sky","earns",25.000);
+        Employee employee1 = new Employee("Aset ", "Asetov ", 25000.00);
+        Employee employee2 = new Employee("Sky ", "Skyev ", 500000.0);
 
-    Student student1 = new Student("ASka","NAr",3.40);
-    Student student2 = new Student("AFK", "WASD",2.57);
+        Student student1 = new Student("Aska ", "Nar", 3.40);
+        Student student2 = new Student("Aer ", "Someone", 2.57);
+        ArrayList<Person> person = new ArrayList<>();
 
+        person.add(employee1);
+        person.add(employee2);
+        person.add(student1);
+        person.add(student2);
 
-    person.add(employee1);
-    person.add(employee2);
-    person.add(student1);
-    person.add(student2);
+        Collections.sort(person);
 
+        printData(person);
+    }
+    public static void printData(Iterable<Person> person) {
+        for (Person persons: person) {
+            System.out.println(persons);
+        }
     }
 }
