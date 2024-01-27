@@ -1,13 +1,14 @@
+import java.util.AbstractSet;
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
-        Employee employee1 = new Employee("Aset ", "Asetov ", 25000.00);
-        Employee employee2 = new Employee("Sky ", "Skyev ", 500000.0);
+        Employee employee1 = new Employee("Employee","Aset ","Asetov ",25000.15);
+        Employee employee2 = new Employee("Employee","Sky ", "Skyev ", 500000.0);
 
-        Student student1 = new Student("Aska ", "Nar", 3.40);
-        Student student2 = new Student("Aer ", "Someone", 2.57);
+        Student student1 = new Student("Student","Aska ", "Nar", 3.40);
+        Student student2 = new Student("Student", "Aer ", "Someone", 2.57);
         ArrayList<Person> person = new ArrayList<>();
 
         person.add(employee1);

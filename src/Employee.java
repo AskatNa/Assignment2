@@ -1,22 +1,17 @@
 public class Employee extends Person{
-    private String position;
     private double salary;
+    private String position;
     //takes no-arg constructer of Person(id)
     public Employee(){super();}
-
-    public Employee(String name, String surname, double salary){
+    public Employee(String position,String name,String surname,double salary){
     super(name,surname);
     this.salary = salary;
+    this.position = position;
     }
 
     @Override
     public String getPosition() {
-        return position;
-    }
-
-    @Override
-    public void setPosition(String position) {
-        this.position = position;
+        return "Employee";
     }
 
     public double getSalary() {
@@ -29,7 +24,7 @@ public class Employee extends Person{
 
     @Override
     public String toString(){
-        return  getId()+": " + "Employee: " + getName() + getSurname() +"earns " +getPaymentAmount();
+        return  getId()+": " + getPosition() + ": " + getName() + getSurname() +"earns " +getPaymentAmount();
     }
 
     @Override
