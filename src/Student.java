@@ -15,11 +15,6 @@ public class Student extends Person{
     public String getPosition() {
         return "Student";
     }
-    //@Override
-   //public String getPosition() {return super.getPosition();}
-
-    //@Override
-    //public void setPosition(String position) {super.setPosition(position);}
 
     public double getGpa() {
         return gpa;
