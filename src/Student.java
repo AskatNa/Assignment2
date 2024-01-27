@@ -8,7 +8,7 @@ public class Student extends Person{
     public Student(String position,String name, String surname, double gpa){
         super(name,surname);
         this.gpa = gpa;
-        //this.position = position;
+        this.position = position;
     }
 
     @Override
