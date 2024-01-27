@@ -14,7 +14,6 @@ public class Person implements Comparable<Person>, Payable{
         setName(name);
         setSurname(surname);
     }
-
     public String getPosition() {
         return position;
     }
