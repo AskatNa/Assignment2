@@ -33,14 +33,12 @@ public class Person implements Comparable<Person>, Payable{
         return name;
     }
 
-    public String getSurname() {
-        return surname;
-    }
-
     public void setSurname(String surname) {
         this.surname = surname;
     }
-
+    public String getSurname() {
+        return surname;
+    }
     @Override
     public String toString(){
         return  "id: " + id +" name: " + name +" surname: " + surname;
@@ -50,6 +48,8 @@ public class Person implements Comparable<Person>, Payable{
         return 0;
     }
 
+    // Overridden compareTo method from Comparable interface
+    // Allows sorting of Person objects based on their payment amount
     @Override
     public int compareTo(Person other) {
         return Double.compare(this.getPaymentAmount(), other.getPaymentAmount());

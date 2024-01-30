@@ -2,6 +2,7 @@ public class Student extends Person{
     private double gpa;
     private String position;
     private final double stipend = 36660.00;
+
     public Student(){
         super();
     }
@@ -25,7 +26,7 @@ public class Student extends Person{
 
     @Override
     public String toString(){
-        return getId() +": " + getPosition() +": "+ getName() + getSurname() +" Gpa:"+ getGpa() +" earns "+ getPaymentAmount();
+        return getId() +": " + getPosition() +": "+ getName() + getSurname() +" Gpa:"+ getGpa() +" earns "+ getPaymentAmount() + " tenge";
     }
     @Override
     public double getPaymentAmount(){

@@ -22,9 +22,11 @@ public class Employee extends Person{
         this.salary = salary;
     }
 
+    // Overridden toString method from the Person class
+    // Provides a string representation specific for Employee objects
     @Override
     public String toString(){
-        return  getId()+": " + getPosition() + ": " + getName() + getSurname() +"earns " +getPaymentAmount();
+        return  getId()+": " + getPosition() + ": " + getName() + getSurname() +"earns " +getPaymentAmount() + " tenge";
     }
 
     @Override
