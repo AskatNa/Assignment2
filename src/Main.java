@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Collections;
-
 public class Main {
     public static void main(String[] args) {
         Employee employee1 = new Employee("Employee","Aset ","Asetov ",25000.15);
