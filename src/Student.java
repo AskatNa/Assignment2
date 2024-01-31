@@ -14,7 +14,7 @@ public class Student extends Person{
 
     @Override
     public String getPosition() {
-        return "Student";
+        return position;
     }
 
     public double getGpa() {
@@ -26,7 +26,7 @@ public class Student extends Person{
 
     @Override
     public String toString(){
-        return getId() +": " + getPosition() +": "+ getName() + getSurname() +" Gpa:"+ getGpa() +" earns "+ getPaymentAmount() + " tenge";
+        return getId() +": " + getPosition() +": "+ getName() + getSurname() + " earns "+ getPaymentAmount() + " tenge";
     }
     @Override
     public double getPaymentAmount(){

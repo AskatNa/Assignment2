@@ -11,7 +11,7 @@ public class Employee extends Person{
 
     @Override
     public String getPosition() {
-        return "Employee";
+        return position;
     }
 
     public double getSalary() {
