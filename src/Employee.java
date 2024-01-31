@@ -8,16 +8,12 @@ public class Employee extends Person{
     this.salary = salary;
     this.position = position;
     }
-
+    //Getter and setter
     @Override
-    public String getPosition() {
-        return position;
-    }
-
+    public String getPosition() {return position;}
     public double getSalary() {
         return salary;
     }
-
     public void setSalary(double salary) {
         this.salary = salary;
     }
@@ -28,7 +24,6 @@ public class Employee extends Person{
     public String toString(){
         return  getId()+": " + getPosition() + ": " + getName() + getSurname() +"earns " +getPaymentAmount() + " tenge";
     }
-
     @Override
     public double getPaymentAmount(){
         return salary;
